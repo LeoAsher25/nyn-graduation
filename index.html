@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <meta
+      name="description"
+      content="Graduation Invitation — Foreign Trade University" />
+    <title>Graduation Invitation · FTU</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <div class="opening" id="opening">
+      <div class="opening-glow"></div>
+      <div
+        class="opening-card"
+        id="openingCard"
+        role="button"
+        tabindex="0"
+        aria-label="Mở thiệp mời tốt nghiệp">
+        <span class="opening-kicker">FOREIGN TRADE UNIVERSITY</span>
+        <span class="opening-line"></span>
+        <h1 style="line-height: 90px">
+          A little invitation<br />from <em data-bind="firstName">Minh Anh</em>.
+        </h1>
+        <div class="opening-cta">
+          <span>OPEN INVITATION</span>
+          <span class="opening-arrow">↗</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="Về đầu trang">
+        <span class="brand-mark">F</span>
+        <span class="brand-copy"
+          >FTU · CLASS OF <span data-bind="year">2026</span></span
+        >
+      </a>
+      <button
+        class="sound-toggle magnetic"
+        id="soundToggle"
+        type="button"
+        aria-label="Bật hoặc tắt âm thanh">
+        <span class="sound-bars"><i></i><i></i><i></i></span>
+        <span class="sound-label">SOUND OFF</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-dark" id="hero">
+        <div class="hero-media parallax-media" data-speed="0.08">
+          <img src="/images/anh-1.jpg" alt="Ảnh tốt nghiệp" />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-frame">
+          <div class="hero-meta reveal">
+            <span>GRADUATION INVITATION</span>
+            <span>HANOI · <span data-bind="year">2026</span></span>
+          </div>
+
+          <div class="hero-title">
+            <p class="eyebrow reveal">THE FINAL CHECK-IN</p>
+            <h2 class="display reveal">
+              THE NEXT<br />
+              <span>CHAPTER</span>
+            </h2>
+          </div>
+
+          <div class="hero-bottom reveal">
+            <div>
+              <span class="meta-label">GRADUATE</span>
+              <strong data-bind="fullName">Nguyễn Minh Anh</strong>
+            </div>
+            <div>
+              <span class="meta-label">UNIVERSITY</span>
+              <strong>Foreign Trade University</strong>
+            </div>
+            <div class="hero-scroll">
+              <span>SCROLL TO BEGIN</span>
+              <b>↓</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section-light">
+        <div class="story-grid">
+          <div class="story-sticky">
+            <p class="eyebrow red reveal">A SMALL RECAP</p>
+            <h2 class="section-title reveal">
+              Four years.<br />One beautiful<br />ending.
+            </h2>
+          </div>
+          <div class="story-copy">
+            <p class="story-line reveal">After <strong>1,460 days</strong>,</p>
+            <p class="story-line reveal">countless deadlines,</p>
+            <p class="story-line reveal">too many cups of coffee,</p>
+            <p class="story-line reveal">and a lot of growing up...</p>
+            <p class="story-final reveal">I made it.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial section-warm">
+        <div class="editorial-grid">
+          <figure class="editorial-photo tall reveal tilt-card">
+            <img src="/images/anh-2.jpg" alt="Ảnh chân dung tốt nghiệp" />
+            <figcaption>01 · THE HALLWAY</figcaption>
+          </figure>
+
+          <div class="editorial-copy">
+            <span class="big-index reveal">01</span>
+            <p class="eyebrow reveal">NOT THE END</p>
+            <h2 class="section-title reveal">
+              Just the<br /><em>beginning.</em>
+            </h2>
+            <p class="body-copy reveal">
+              Một chương đã khép lại, và sẽ thật tuyệt nếu bạn có mặt trong
+              khoảnh khắc mình bước sang chương tiếp theo.
+            </p>
+          </div>
+
+          <figure class="editorial-photo portrait reveal tilt-card">
+            <img src="/images/anh-3.jpg" alt="Ảnh tốt nghiệp tại FTU" />
+            <figcaption>02 · FTU, HANOI</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="invitation section-dark" id="invitation">
+        <div class="invitation-heading">
+          <p class="eyebrow reveal">YOU'RE INVITED</p>
+          <h2 class="display small reveal">SAVE<br />THE DATE</h2>
+        </div>
+
+        <div class="ticket reveal tilt-card" id="ticket">
+          <div class="ticket-main">
+            <div class="ticket-topline">
+              <span>FOREIGN TRADE UNIVERSITY</span>
+              <span>GRAD · <span data-bind="year">2026</span></span>
+            </div>
+
+            <div class="ticket-name">
+              <span>GRADUATE</span>
+              <h3 data-bind="fullName">Nguyễn Minh Anh</h3>
+            </div>
+
+            <div class="ticket-details">
+              <div>
+                <span>DATE</span>
+                <strong data-bind="date">20.09.2026</strong>
+              </div>
+              <div>
+                <span>TIME</span>
+                <strong data-bind="time">09:00 AM</strong>
+              </div>
+              <div>
+                <span>VENUE</span>
+                <strong data-bind="venue">Foreign Trade University</strong>
+              </div>
+            </div>
+
+            <div class="ticket-footer">
+              <span>DESTINATION</span>
+              <strong>THE NEXT CHAPTER →</strong>
+            </div>
+          </div>
+
+          <div class="ticket-stub">
+            <span class="vertical">BOARDING PASS</span>
+            <div class="barcode" aria-hidden="true"></div>
+            <span class="seat">FTU<br /><b>26</b></span>
+          </div>
+        </div>
+
+        <div class="invitation-actions reveal">
+          <a
+            class="btn btn-primary magnetic"
+            data-bind-href="mapsUrl"
+            href="#"
+            target="_blank"
+            rel="noreferrer">
+            <span>GET DIRECTIONS</span><b>↗</b>
+          </a>
+          <a
+            class="btn btn-ghost magnetic"
+            data-bind-href="calendarUrl"
+            href="#">
+            <span>ADD TO CALENDAR</span><b>＋</b>
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery section-light" id="gallery">
+        <div class="gallery-head">
+          <div>
+            <p class="eyebrow red reveal">A FEW FRAMES</p>
+            <h2 class="section-title reveal">Memories<br />worth keeping.</h2>
+          </div>
+          <p class="gallery-note reveal">
+            Ảnh có thể thay tự do. Hãy ưu tiên mix ảnh ngang + dọc để layout có
+            nhịp điệu hơn.
+          </p>
+        </div>
+
+        <div class="gallery-canvas">
+          <figure class="polaroid p1 reveal tilt-card">
+            <img src="/images/anh-4.jpg" alt="Kỷ niệm FTU 1" />
+            <figcaption>first day energy ✦</figcaption>
+          </figure>
+          <figure class="polaroid p2 reveal tilt-card">
+            <img src="/images/anh-5.jpg" alt="Kỷ niệm FTU 2" />
+            <figcaption>somewhere between deadlines</figcaption>
+          </figure>
+          <figure class="polaroid p3 reveal tilt-card">
+            <img src="/images/anh-6.jpg" alt="Kỷ niệm FTU 3" />
+            <figcaption>the people who made it better</figcaption>
+          </figure>
+          <figure class="polaroid p4 reveal tilt-card">
+            <img src="/images/anh-7.jpg" alt="Kỷ niệm FTU 4" />
+            <figcaption>one last campus walk</figcaption>
+          </figure>
+          <div class="gallery-word" aria-hidden="true">FTU</div>
+        </div>
+      </section>
+
+      <section class="timeline section-black">
+        <div class="timeline-title">
+          <p class="eyebrow reveal">THE JOURNEY</p>
+          <h2 class="section-title light reveal">2022 — 2026</h2>
+        </div>
+
+        <div class="timeline-list">
+          <article class="timeline-item reveal">
+            <span class="year">2022</span>
+            <div class="timeline-rule"></div>
+            <p>First day at FTU.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year">2023</span>
+            <div class="timeline-rule"></div>
+            <p>New friends, new deadlines.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year">2024</span>
+            <div class="timeline-rule"></div>
+            <p>Internships, plans, and a little chaos.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year">2025</span>
+            <div class="timeline-rule"></div>
+            <p>“Bao giờ tốt nghiệp?”</p>
+          </article>
+          <article class="timeline-item final reveal">
+            <span class="year">2026</span>
+            <div class="timeline-rule"></div>
+            <p>We made it.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="rsvp section-red" id="rsvp">
+        <div class="rsvp-inner">
+          <p class="eyebrow reveal">ONE LAST FTU DATE?</p>
+          <h2 class="display small reveal">WILL I<br />SEE YOU<br />THERE?</h2>
+
+          <div class="rsvp-buttons reveal">
+            <button class="rsvp-choice magnetic" data-answer="yes">
+              <span>OF COURSE</span>
+              <b>✦</b>
+            </button>
+            <button class="rsvp-choice secondary magnetic" data-answer="maybe">
+              <span>I'LL TRY</span>
+              <b>🥲</b>
+            </button>
+          </div>
+
+          <form class="message-form reveal" id="messageForm">
+            <label>
+              <span>Your name</span>
+              <input
+                type="text"
+                id="guestName"
+                placeholder="Tên của bạn"
+                autocomplete="name" />
+            </label>
+            <label>
+              <span>Leave me a message</span>
+              <textarea
+                id="guestMessage"
+                rows="3"
+                placeholder="Một lời nhắn nhỏ..."></textarea>
+            </label>
+            <button class="btn btn-dark magnetic" type="submit">
+              <span>SEND A LITTLE LOVE</span><b>↗</b>
+            </button>
+            <p class="form-note">
+              Demo frontend: lời nhắn được lưu tạm trong trình duyệt, chưa gửi
+              lên server.
+            </p>
+          </form>
+
+          <div class="toast" id="toast" role="status" aria-live="polite">
+            <span>See you at FTU. Don't forget our photo. 🤍</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ending section-black">
+        <div class="ending-media parallax-media" data-speed="0.05">
+          <img src="/images/anh-8.jpg" alt="Ảnh kết thúc lễ tốt nghiệp" />
+          <div class="ending-overlay"></div>
+        </div>
+        <div class="ending-content">
+          <p class="ending-line reveal">So this is it.</p>
+          <p class="ending-line reveal">One chapter ends.</p>
+          <p class="ending-line reveal">Another begins.</p>
+          <h2 class="display small reveal">SEE YOU AT<br />GRADUATION.</h2>
+          <p class="signature reveal">
+            — <span data-bind="firstName">Minh Anh</span>
+          </p>
+          <p class="ending-note reveal">
+            Made with too many deadlines<br />and a little bit of nostalgia.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>FTU · CLASS OF <span data-bind="year">2026</span></span>
+      <a href="#hero">BACK TO TOP ↑</a>
+    </footer>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="/audio/background.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
